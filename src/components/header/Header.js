@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBed, faCar, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons';
+import { faBed, faCalendarDays, faCar, faPerson, faPlane, faTaxi } from '@fortawesome/free-solid-svg-icons';
 
 const Header = () => {
   return (
@@ -31,7 +31,23 @@ const Header = () => {
         </div>
         <h1 className='headerTitle'>A lifetime of discount? It's Genius.</h1>
         <p className='headerDesc'>Get rewarded for your travels - unlock 
-        instant savings of 10%</p>
+        instant savings of 10% or mare with a free Akhilen booking account.</p>
+        <button className='headerBtn'>Sign in / Register </button>
+        <div className='headerSearch'>
+          <div className='headerSearchItem'>
+            <FontAwesomeIcon icon={faBed} className="headerIcon" />
+            <input type='text' placeholder='Where are you going?' className='headerSearchInput' />
+          </div>
+          <div className='headerSearchItem'>
+            <FontAwesomeIcon icon={faCalendarDays} className="headerIcon" />
+            <span className='headerSearchText'>Date to date</span>
+          </div>
+          <div className='headerSearchItem'>
+            <FontAwesomeIcon icon={faPerson} className="headerIcon" />
+            <span className='headerSearchText'>2 Adualts 2 chinlder 1 room</span>
+          </div>
+        </div>
+
         </div>
     </div>
   )
