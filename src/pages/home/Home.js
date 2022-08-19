@@ -8,6 +8,9 @@ const Home = () => {
     <>
       <Navbar />
       <Header />
+      <div className='homeContainer'>
+
+      </div>
     </>
   )
 }
