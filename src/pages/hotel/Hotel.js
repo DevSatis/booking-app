@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
+import './Hotel.css';
+import Navbar from "../../components/navbar/Navbar";
+import Header from "../../components/header/Header";
+
 
 const Hotel = () => {
   return (
-    <div>Hotel</div>
+    <div>
+      <Navbar />
+      <Header />
+    </div>
   )
 }
 
